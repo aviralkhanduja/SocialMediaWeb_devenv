@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="/css/home.css">
+<section id="posts">
+    <form action="/user/home/post/create" id="post-form" method="post">
+        <h5><i class="fas fa-user"></i><%=user.Name%></h5>
+        <textarea rows="3" required name="content" placeholder="What are you feeling,are you?"></textarea>
+        <br>
+        <button type="submit" data-related="posts-display">Post</button>
+    </form> 
+    <ul id="display-posts">
+    <%for(let post of posts){%>
+        <%-include('_post',{post:post});%>
+    <%}%>
+    </ul>
+    <script type="text/javascript" src="/js/home.js">
+    </script>
+</section>

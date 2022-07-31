@@ -1,0 +1,10 @@
+<li>
+    <h5><%=comment.user.Name%></h5>
+    <p class="date"><%=moment(comment.createdAt).format('Do MMMM, YYYY')%></p>
+    <div class="comment-content">
+        <p><%=comment.content%></p>
+        <% if(post.user.id==user.id||comment.user.id==user.id){ %>
+        <a href="/user/home/comment/delete?post=<%=post._id%>&comment=<%=comment._id%>&check1=<%=post.user.id%>&check2=<%=comment.user.id%>"data-related="comments-box"><i class="fas fa-trash"></i></a>
+        <% } %>
+    </div>
+</li>

@@ -1,0 +1,27 @@
+<li id="<%=post._id%>"> 
+    <div class="user-of-post">  
+        <h5><i class="fas fa-user"></i><%=post.user.Name%></h5>
+        <% if(user.id==post.user.id){ %>
+            <a href="/user/home/post/delete/?id=<%=post.id%>" data-related="posts-display" class="delete-post-button"><i class="fas fa-trash"></i></a>
+        <% } %>
+    </div>
+    <p class="date"><%=moment(post.createdAt).format('Do MMMM, YYYY')%></p>
+    <p><%=post.content%></p>
+    <form action="/user/home/comment/create" method="post">
+        <div class="comment-input">
+            <input type="text" name="content" placeholder=" Add a comment..." required>
+            <input type="hidden" name="post" value="<%=post._id%>">
+            <button type="submit" data-related="posts-display">Add</button>
+        </div>
+        <a class="likes-box" data-related="posts-display" href="/user/home/like/create?type=Post&id=<%=post._id%>" >Like <i class="fas fa-thumbs-up"></i> <span><%=post.likes.length%></span></span></a>
+        <a class="comments-box" data-related="posts-display">View Comments</a>
+        <div class="invisible">
+            <h4 class="heading-comments">Comments</h4>
+            <i class="fas fa-times cross"></i>
+            <%for(let comment of post.comments){%>
+                <%-include('_comment',{comment:comment});%>
+            <%}%>
+            <hr>
+        </div>
+    </form>
+</li>

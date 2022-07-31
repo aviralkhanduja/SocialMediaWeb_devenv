@@ -1,0 +1,43 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(63, 63, 150);
+    font-weight: 650;
+    padding: 10px 4px 10px 4px;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    #nav-right{
+        color: white;
+        padding-top: 3px;
+        .profile-options{
+            background-color: grey;
+            list-style: none;
+            text-align: center;
+            li{
+                padding: 5px;
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+            display: none;
+        }
+    }
+    #nav-right:hover{
+        cursor: pointer;
+        .profile-options{
+            display: block;
+            position: absolute;
+        }
+    }
+    #unauth-about-us{
+        padding: 7px;
+        border: 1px solid navy;
+        margin-top: 4px;
+    }
+    #unauth-about-us:hover{
+        background-color: white;
+        color: navy;
+    }
+}

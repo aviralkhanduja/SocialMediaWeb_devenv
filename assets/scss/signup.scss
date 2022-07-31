@@ -1,0 +1,44 @@
+body{
+    background-image: linear-gradient(to bottom, rgb(61,128,188),rgb(233,233,233),rgb(176,124,85));
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    h2{
+        text-align: center;
+        margin-top: 13%;
+    }
+    #take-input{
+        width: 42%;
+        margin: auto;
+        padding: 10px;
+        background-color: white;
+        text-align: center;
+        input:focus{
+            outline: none;
+        }
+        input{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid black;
+            margin-top: 1rem;
+        }
+        .row{
+            display: flex;
+            justify-content: space-around;
+            .col{
+                width: 40%;
+            }
+        }
+        button{
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            padding: 5px;
+            font-weight: 650;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: darkgray;
+        }
+    }
+}

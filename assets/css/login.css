@@ -1,0 +1,41 @@
+body {
+  background-image: linear-gradient(to bottom, #3d80bc, #e9e9e9, #b07c55);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 100vh; }
+  body #request-to-join {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 13%; }
+  body #login-form {
+    width: 24%;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    text-align: center; }
+    body #login-form input:focus {
+      outline: none; }
+    body #login-form input {
+      width: 70%;
+      border: none;
+      border-bottom: 1px solid black;
+      margin-top: 1rem; }
+    body #login-form a {
+      text-decoration: none;
+      border: 1px solid gray;
+      background-color: #efefef;
+      padding: 4px;
+      color: black;
+      font-size: 0.8rem;
+      font-weight: 650; }
+    body #login-form button {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      padding: 5px;
+      font-weight: 650; }
+    body #login-form button:hover {
+      cursor: pointer;
+      background-color: darkgray; }
+    body #login-form a:hover {
+      background-color: darkgray; }

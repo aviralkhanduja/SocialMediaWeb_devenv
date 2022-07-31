@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="/css/signup.css"> 
+<h2>PERSONAL INFO</h2>
+<form action="/signup/adduser" id="take-input" method="post" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col">
+            <input type="text" name="Name" placeholder="YOUR NAME" required >
+        </div>
+        <div class="col">
+            <input type="email" name="Email" placeholder="EMAIL" required >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <input type="text" name="Phone" placeholder="PHONE NUMBER" >
+        </div>
+        <div class="col">
+            <input type="text" name="Address" placeholder="ADDRESS" >
+        </div>
+    </div>
+    <div class="row"> 
+        <div class="col">   
+            <input type="text" name="Zip_Code" placeholder="ZIP CODE" >
+        </div>
+        <div>
+            <input type="file" name="avatar" placeholder="Profile Picture">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <input type="password" name="password" placeholder="PASSWORD" required>
+        </div>
+        <div class="col">
+            <input type="password" name="Confirm_Password" placeholder="CONFIRM PASSWORD" required>
+        </div>
+    </div>
+    <button type="submit"><i class="fas fa-user"></i>ADD USER</button>
+    <a href="/users/auth/google">Google</a>
+</form>

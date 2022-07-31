@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3f3f96;
+  font-weight: 650;
+  padding: 10px 4px 10px 4px; }
+  nav a {
+    color: white;
+    text-decoration: none; }
+  nav #nav-right {
+    color: white;
+    padding-top: 3px; }
+    nav #nav-right .profile-options {
+      background-color: grey;
+      list-style: none;
+      text-align: center;
+      display: none; }
+      nav #nav-right .profile-options li {
+        padding: 5px; }
+        nav #nav-right .profile-options li a:hover {
+          text-decoration: underline; }
+  nav #nav-right:hover {
+    cursor: pointer; }
+    nav #nav-right:hover .profile-options {
+      display: block;
+      position: absolute; }
+  nav #unauth-about-us {
+    padding: 7px;
+    border: 1px solid navy;
+    margin-top: 4px; }
+  nav #unauth-about-us:hover {
+    background-color: white;
+    color: navy; }

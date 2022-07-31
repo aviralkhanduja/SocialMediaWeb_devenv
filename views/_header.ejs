@@ -1,0 +1,24 @@
+<nav>
+    <div id="nav-left">
+        <a href="/user/home"><h3>ConnectCode</h3></a>
+    </div>
+    <div id="nav-right">
+        <!--TODO about us PAGE -->
+        <% if(locals.user){ %>
+            <h4><%=user.Name%></h4>
+            <ul class="profile-options">
+                <li>
+                    <a href="/user/home/updateform">Update Profile</a>
+                </li>
+                <li>
+                    <a href="">Write a review</a>
+                </li>
+                <li>
+                    <a href="">About us</a>
+                </li>
+            </ul>
+        <% }else{ %>
+            <a id="unauth-about-us" href="">About us</a>
+        <% } %>
+    </div>
+</nav>
